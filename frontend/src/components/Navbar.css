@@ -1,0 +1,130 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #FF6F61, #FF9068, #FFD36E); /* Gradient background */
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Strong shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Shadow grows on hover */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFFFFF; /* White for branding */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #FFE156; /* Bright Yellow on hover */
+  transform: scale(1.1); /* Zoom effect */
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #FFFFFF; /* White text */
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #FFE156; /* Bright Yellow on hover */
+  transform: translateY(-3px); /* Lift effect */
+  text-decoration: none;
+}
+
+/* Fancy Underline Animation */
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #FFE156; /* Bright Yellow */
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Underline grows to full width */
+}
+
+/* Button Links */
+.btn-link {
+  color: #FFD36E; /* Soft Yellow */
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.btn-link:hover {
+  color: #FFE156; /* Brighter Yellow */
+  text-decoration: underline;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  background: #FFD36E; /* Soft Yellow */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg); /* Rotate effect on hover */
+  background: #FFE156; /* Brighter Yellow */
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* White icon for visibility */
+}
+
+/* Dropdown Animation */
+.collapse {
+  transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+.collapse.show {
+  opacity: 1;
+  height: auto;
+}
+
+.collapse:not(.show) {
+  opacity: 0;
+  height: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+      background: linear-gradient(90deg, #FF6F61, #FF9068, #FFD36E); /* Keep gradient for dropdown */
+      padding: 1rem 0;
+  }
+
+  .nav-link {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+  }
+
+  .navbar-brand {
+      font-size: 2rem;
+  }
+}

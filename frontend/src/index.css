@@ -11,3 +11,234 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* General Reset */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F8FA; /* Soft Cloud White */
+  color: #525E75; /* Steel Gray */
+}
+
+/* Container Styles */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  background-color: #FFFFFF; /* Pure White */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px;
+  text-align: center;
+}
+
+.jumbotron .display-4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #2E3A59; /* Dark Sapphire for headings */
+  margin-bottom: 20px;
+}
+
+.jumbotron .lead {
+  font-size: 1.25rem;
+  color: #525E75; /* Steel Gray for body text */
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.jumbotron hr {
+  border: none;
+  border-top: 2px solid #FFA41B; /* Golden Yellow Divider */
+  margin: 20px 0;
+}
+
+/* Button Styles */
+.jumbotron .btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.jumbotron .btn-primary {
+  background-color: #5A20CB; /* Deep Amethyst */
+  border: none;
+  color: #fff;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #4A18A5; /* Slightly darker Amethyst */
+}
+
+.jumbotron .btn-secondary {
+  background-color: #FFA41B; /* Golden Yellow */
+  border: none;
+  color: #fff;
+}
+
+.jumbotron .btn-secondary:hover {
+  background-color: #CC8414; /* Slightly darker Golden Yellow */
+}
+
+/* Spacing Utility */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+/* Link Hover Effect */
+.jumbotron a:hover {
+  color: #E94560; /* Rosy Red Accent */
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jumbotron .display-4 {
+      font-size: 2.2rem;
+  }
+
+  .jumbotron .lead {
+      font-size: 1rem;
+  }
+
+  .jumbotron .btn {
+      font-size: 1rem;
+  }
+}
+
+
+/* General Reset */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Gradient background */
+  color: #4A4A68; /* Muted Navy */
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Container Styles */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.jumbotron .display-4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #2D2A32; /* Charcoal for headings */
+  margin-bottom: 20px;
+}
+
+.jumbotron .lead {
+  font-size: 1.2rem;
+  color: #4A4A68; /* Muted Navy */
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Divider */
+.jumbotron hr {
+  border: none;
+  border-top: 2px solid #FF6F61; /* Coral Red Divider */
+  margin: 20px 0;
+}
+
+/* Button Styles */
+.jumbotron .btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.jumbotron .btn-primary {
+  background-color: #FF6F61; /* Coral Red */
+  border: none;
+  color: #fff;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #FF4A3D; /* Darker Coral */
+  box-shadow: 0 4px 10px rgba(255, 75, 75, 0.5); /* Glow effect */
+}
+
+.jumbotron .btn-secondary {
+  background-color: #6C63FF; /* Indigo */
+  border: none;
+  color: #fff;
+}
+
+.jumbotron .btn-secondary:hover {
+  background-color: #534DD1; /* Darker Indigo */
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.5); /* Glow effect */
+}
+
+/* Spacing Utility */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+/* Link Hover Effect */
+.jumbotron a:hover {
+  color: #FFE156; /* Bright Yellow Accent */
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jumbotron .display-4 {
+      font-size: 2.2rem;
+  }
+
+  .jumbotron .lead {
+      font-size: 1rem;
+  }
+
+  .jumbotron .btn {
+      font-size: 1rem;
+  }
+}
