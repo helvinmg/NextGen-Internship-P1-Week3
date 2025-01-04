@@ -1,0 +1,121 @@
+/* General Page Styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-control {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #FF6F61; /* Coral color for focus */
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5); /* Glow effect on focus */
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #FF6F61; /* Coral color */
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #FF9068; /* Lighter Coral on hover */
+  cursor: pointer;
+}
+
+/* Error Message Styling */
+.text-danger {
+  color: #e74c3c; /* Red color for error */
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Link Styling */
+a {
+  color: #FF6F61; /* Coral */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Already have an account text */
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Animation on Form Inputs */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply Fade-in animation on the container */
+.container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .container {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  h2 {
+      font-size: 1.6rem;
+  }
+
+  .form-control {
+      padding: 10px;
+  }
+
+  .btn-primary {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}

@@ -20,8 +20,14 @@ const LandingPage = () => {
                     <Link to="/login" className="btn btn-secondary btn-lg">Login</Link>
                 </div>
             </div>
+            <footer className="footer mt-5">
+                <div className="container">
+                    <span className="text-muted">© 2023 CollabTool. All rights reserved.</span>
+                </div>
+            </footer>
         </div>
     );
 };
 
 export default LandingPage;
+
